@@ -4,7 +4,7 @@
 
 # Pupil Core
 
-![Pupil Core headset — Pupil Labs](imagens/pupilcore.jpg)
+![Pupil Core headset — Pupil Labs](imagens/pupil/pupilcore.jpg)
 
 Imagem do Pupil Core (fonte: Pupil Labs). Mais detalhes: https://pupil-labs.com/products/core/
 
@@ -12,13 +12,13 @@ Imagem do Pupil Core (fonte: Pupil Labs). Mais detalhes: https://pupil-labs.com/
 
 1. No Stream Deck, abra a pasta "Pupil Eye Tracking" (ícone verde) e clique em `Pupil Capture`.
 
-	![alt text](imagens/pupil-image.png)
+	![alt text](imagens/pupil/pupil-image.png)
 
-	![alt text](imagens/pupil-image-1.png)
+	![alt text](imagens/pupil/pupil-image-1.png)
 
 2. O Pupil Capture será aberto. No painel direito, confirme que a extensão "Surface Tracker" está ativada:
 
-	![alt text](imagens/pupil-image-2.png)
+	![alt text](imagens/pupil/pupil-image-2.png)
 
 3. Em `Marker Type`, selecione exatamente `Apriltag (tag36h11)` — essa opção é necessária para reconhecer os marcadores (QR codes) no monitor.
 
@@ -26,12 +26,12 @@ Imagem do Pupil Core (fonte: Pupil Labs). Mais detalhes: https://pupil-labs.com/
 
 5. Execute as etapas de calibração e gravação na ordem indicada (de cima para baixo):
 
-	![alt text](imagens/pupil-image-3.png)
+	![alt text](imagens/pupil/pupil-image-3.png)
 
 
 6. Durante a gravação é possível adicionar "surfaces" (áreas mapeadas) clicando no atalho `S`. Surfaces permitem gerar mapas de calor (heatmaps) por área de interesse:
 
-	![alt text](imagens/pupil-image-4.png)
+	![alt text](imagens/pupil/pupil-image-4.png)
 
 
 Dica: adicione surfaces correspondentes a páginas ou telas diferentes quando testar um aplicativo ou site com várias vistas.
@@ -42,7 +42,7 @@ Dica: adicione surfaces correspondentes a páginas ou telas diferentes quando te
 
 2. No painel do Surface Tracker, habilite `Show Marker IDs` e `Show Heatmap` para visualizar identificadores de marcador e mapas de calor:
 
-	![alt text](imagens/pupil-image-5.png)
+	![alt text](imagens/pupil/pupil-image-5.png)
 
 3. Para a gravação final, o técnico deve reproduzir o vídeo no Pupil Player e, simultaneamente, acionar o botão "Gravar Pupil" no dispositivo até o fim do vídeo. Isso garante que os dados do eye tracker e o vídeo fiquem sincronizados.
 
@@ -53,4 +53,4 @@ Agora o técnico irá iniciar a gravação final, o resultado final do processo 
 
 A seguir está um exemplo de um frame de um vídeo de teste de usabilidade utilizando o Pupil Core:
 
-![Frame de exemplo — Pupil Core](imagens/pupil-output.png)
+![Frame de exemplo — Pupil Core](imagens/pupil/pupil-output.png)
