@@ -1,56 +1,104 @@
-# ⚠️ Aviso
-
-> É obrigatório que HAJA UM TÉCNICO acompanhando diretamente o uso da sala de usabilidade. Não operar os equipamentos sem supervisão técnica.
-
 # Pupil Core
 
-![Pupil Core headset — Pupil Labs](imagens/pupil/pupilcore.jpg)
+O Pupil Core é um rastreador ocular vestível que registra o campo de visão do participante e estima a direção do olhar. Este guia apresenta o fluxo de preparação, calibração, captura e análise utilizado na Sala de Usabilidade.
 
-Imagem do Pupil Core (fonte: Pupil Labs). Mais detalhes: https://pupil-labs.com/products/core/
+> **Supervisão técnica obrigatória:** o uso dos equipamentos deve ser acompanhado diretamente por um técnico. A calibração deve ser conduzida pelo técnico responsável.
 
-## Configuração e captura
+Antes da atividade, consulte as [orientações gerais e o procedimento de agendamento](../orientacoes-gerais.md). Combine com a equipe os cuidados com participantes, gravações e armazenamento dos arquivos.
 
-1. No Stream Deck, abra a pasta "Pupil Eye Tracking" (ícone verde) e clique em `Pupil Capture`.
+![Óculos Pupil Core da Pupil Labs](imagens/pupil/pupilcore.jpg)
 
-	![alt text](imagens/pupil/pupil-image.png)
+*Imagem do equipamento: Pupil Labs.*
 
-	![alt text](imagens/pupil/pupil-image-1.png)
+## Entenda o fluxo
 
-2. O Pupil Capture será aberto. No painel direito, confirme que a extensão "Surface Tracker" está ativada:
+- **Pupil Capture:** recebe as imagens das câmeras, permite calibrar o rastreamento e grava a sessão.
+- **Pupil Player:** abre a sessão gravada para análise, visualização e exportação.
+- **Surface Tracker:** identifica superfícies planas, como um monitor, por meio de marcadores visuais e relaciona os pontos do olhar a essas superfícies.
 
-	![alt text](imagens/pupil/pupil-image-2.png)
+As imagens mostram a configuração documentada do laboratório. A disposição dos menus e os atalhos do Stream Deck podem variar; confirme a configuração disponível com o técnico.
 
-3. Em `Marker Type`, selecione exatamente `Apriltag (tag36h11)` — essa opção é necessária para reconhecer os marcadores (QR codes) no monitor.
+## Preparação e abertura do Pupil Capture
 
-4. Faça a calibração dos óculos. A calibração deve ser realizada apenas pelo técnico responsável; se ele não estiver disponível, solicite auxílio antes de prosseguir.
+1. Com o técnico, confira a conexão do equipamento, o ajuste dos óculos e o conforto do participante.
+2. No Stream Deck, abra a pasta **Pupil Eye Tracking**, identificada pelo ícone verde.
 
-5. Execute as etapas de calibração e gravação na ordem indicada (de cima para baixo):
+   ![Pasta Pupil Eye Tracking no Stream Deck](imagens/pupil/pupil-image.png)
 
-	![alt text](imagens/pupil/pupil-image-3.png)
+3. Selecione **Pupil Capture**.
 
+   ![Atalhos locais Pupil Capture, Pupil Processing e Gravar Pupil](imagens/pupil/pupil-image-1.png)
 
-6. Durante a gravação é possível adicionar "surfaces" (áreas mapeadas) clicando no atalho `S`. Surfaces permitem gerar mapas de calor (heatmaps) por área de interesse:
+4. Confirme que as janelas das câmeras mostram o ambiente e os olhos. Se alguma imagem não aparecer, solicite a verificação do técnico antes de continuar.
+5. No painel de plugins, habilite **Surface Tracker** quando a atividade exigir análise de uma superfície.
 
-	![alt text](imagens/pupil/pupil-image-4.png)
+   ![Painel Surface Tracker com seleção da família de marcadores](imagens/pupil/pupil-image-2.png)
 
+6. Para os marcadores mostrados na configuração deste guia, selecione **Apriltag (tag36h11)** em **Marker Type**. A família selecionada deve corresponder aos marcadores utilizados. Esses marcadores são **AprilTags**, e não QR codes.
 
-Dica: adicione surfaces correspondentes a páginas ou telas diferentes quando testar um aplicativo ou site com várias vistas.
+## Calibração e validação
 
-## Visualizando resultados no Pupil Player
+Antes de calibrar, o técnico deve conferir a detecção das pupilas, o foco da câmera do ambiente e o enquadramento da área utilizada no teste.
 
-1. Abra o arquivo de gravação no `Pupil Player`.
+1. O técnico seleciona o método de calibração e inicia o procedimento pelo controle **C**.
+2. O participante segue os alvos conforme as instruções do método escolhido.
+3. Após a calibração, o técnico utiliza o controle **T** para validar a estimativa do olhar.
+4. Se a validação indicar problemas, o técnico ajusta o equipamento e repete o procedimento antes da captura.
 
-2. No painel do Surface Tracker, habilite `Show Marker IDs` e `Show Heatmap` para visualizar identificadores de marcador e mapas de calor:
+![Controles C para calibração, T para validação, R para gravação e A para adicionar superfície](imagens/pupil/pupil-image-3.png)
 
-	![alt text](imagens/pupil/pupil-image-5.png)
+## Definição das superfícies
 
-3. Para a gravação final, o técnico deve reproduzir o vídeo no Pupil Player e, simultaneamente, acionar o botão "Gravar Pupil" no dispositivo até o fim do vídeo. Isso garante que os dados do eye tracker e o vídeo fiquem sincronizados.
+Com o **Surface Tracker** ativo, enquadre os marcadores e use **Add surface** ou o controle **A** para adicionar uma superfície. A documentação atual indica o atalho de teclado `a`. Dê um nome à superfície e ajuste seus cantos para delimitar a área desejada.
 
-Agora o técnico irá iniciar a gravação final, o resultado final do processo de eye tracking, para isto ele deverá dar play no vídeo dentro do Pupil Player e ao mesmo tempo clicar no ícone "Gravar Pupil" do Eye tracker, até o vídeo acabar no Pupil Player.
+As superfícies podem ser definidas no Capture ou posteriormente no Player, desde que os marcadores estejam visíveis na gravação. Mantenha-os no mesmo plano da superfície e sem obstruções.
 
+Uma superfície representa uma área física rastreada, como o monitor. Ao alternar entre páginas de um site no mesmo monitor, separe os trechos da gravação na análise para evitar misturar resultados de conteúdos diferentes.
 
-## Produto final
+![Exemplo de mapa de calor de uma superfície](imagens/pupil/pupil-image-4.png)
 
-A seguir está um exemplo de um frame de um vídeo de teste de usabilidade utilizando o Pupil Core:
+## Gravação da sessão
 
-![Frame de exemplo — Pupil Core](imagens/pupil/pupil-output.png)
+1. No painel **Recorder**, confira com o técnico a pasta de destino e o nome da sessão.
+2. Inicie a captura pelo controle **R** ou pela tecla `r`. Confirme que o indicador de tempo de gravação está avançando antes de começar a tarefa.
+3. Ao finalizar, use o mesmo controle para encerrar a captura.
+4. Confira se a sessão foi salva e preserve sua pasta completa, incluindo vídeos e arquivos de dados.
+
+## Análise no Pupil Player
+
+1. Abra o **Pupil Player** e arraste para sua janela a **pasta da gravação**, normalmente identificada por três dígitos, como `000`. Um vídeo isolado não contém todos os dados necessários à análise.
+2. Ative o **Surface Tracker** e aguarde o processamento dos marcadores. Confira as superfícies e seus limites.
+3. Use **Show Marker IDs** para inspecionar os identificadores dos marcadores e **Show Heatmap** para visualizar o mapa de calor.
+4. Selecione o intervalo da tarefa na linha do tempo. Após ajustar o intervalo ou as dimensões da superfície, recalcule a distribuição do olhar em **(Re)calculate gaze distributions**, quando disponível.
+
+![Superfícies e mapa de calor exibidos no Pupil Player](imagens/pupil/pupil-image-5.png)
+
+## Exportação e conferência dos resultados
+
+No Pupil Player, selecione o trecho desejado e habilite os exportadores necessários:
+
+- **World Video Exporter:** exporta o vídeo do ambiente com as visualizações configuradas.
+- **Raw Data Exporter:** exporta os dados para análise.
+- **Surface Tracker:** permite exportar relatórios das superfícies e mapas de calor.
+
+Use o botão de exportação ou a tecla `e`. Confira os resultados na subpasta `exports` da gravação e abra os arquivos para verificar o conteúdo antes de encerrar a atividade.
+
+### Atalho local Gravar Pupil
+
+A configuração documentada do Stream Deck inclui o botão **Gravar Pupil**, usado no fluxo local durante a reprodução no Player. Antes de utilizá-lo, o técnico deve confirmar o que esse atalho grava, onde salva o resultado e como encerra a captura.
+
+Iniciar a reprodução e uma gravação externa manualmente não garante sincronização precisa entre fontes. Para análises que dependam dessa correspondência, o técnico deve verificar os registros de tempo e o método de sincronização adotado. Preserve sempre a pasta original da sessão.
+
+## Exemplo de resultado
+
+A imagem abaixo mostra um quadro de um vídeo de teste de usabilidade com o Pupil Core.
+
+![Quadro de um teste de usabilidade com visualização do olhar](imagens/pupil/pupil-output.png)
+
+## Referências
+
+- [Pupil Capture — calibração, gravação e Surface Tracker](https://docs.pupil-labs.com/core/software/pupil-capture/)
+- [Pupil Player — análise e exportação](https://docs.pupil-labs.com/core/software/pupil-player/)
+- [Orientações gerais dos laboratórios](../orientacoes-gerais.md)
+
+*Revisão documental: outubro de 2026. O procedimento deve ser conferido pelo técnico na versão instalada antes da atividade.*

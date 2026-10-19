@@ -1,46 +1,62 @@
----
-Insper: Sala de Usabilidade
-date: Março 2021
----
+# Infraestrutura da Sala de Usabilidade
 
-Infraestrutura
-=== 
+A Sala de Usabilidade permite observar e registrar a interação de participantes com interfaces e outros produtos em um ambiente semelhante ao de uma casa. Seus recursos incluem computadores, câmeras, captação de áudio e equipamentos de rastreamento ocular.
 
-A infraestrutura da sala de usabilidade conta com câmeras e microfone para conseguir capturar e monitorar interações dos usuários dentro da mesma.
+> **Supervisão técnica:** combine o acesso e a preparação da atividade com a equipe do laboratório. Os equipamentos devem ser operados com acompanhamento técnico, conforme os guias de uso da sala.
 
-Dentro da sala de usabilidade contamos com:
+![Ambiente da Sala de Usabilidade](../imagens-gerais/sala-de-usabilidade.jpg)
 
-- 2 Computadores (NUC)
-- 1 iMac 2018
-- 1 Monitor
-- 1 Stream deck
-- 2 Câmeras
-- 1 Microfone
+## Equipamentos e recursos
 
-Que estão separados de acordo com o diagrama abaixo:
+A infraestrutura reúne os seguintes recursos:
 
-![Flowchart](https://user-images.githubusercontent.com/13526331/168649006-7cdb481c-758f-4840-baa0-66a1a8e333b0.jpg)
+| Recurso | Uso |
+| --- | --- |
+| Computador Intel NUC | Uma única NUC frontal centraliza todas as conexões dos equipamentos da sala. |
+| iMac | iMac utilizado para testes com usuários. |
+| Câmeras do ambiente | Câmeras para captar vistas frontais e laterais da sala, posicionadas atrás de vidros com películas especiais. |
+| Microfone | Captação do áudio das atividades. |
+| Monitor e telas externas | Monitor e telas externas para acompanhar as imagens da sala, no corredor e no Ágil 1. |
+| Stream Deck | Painel de atalhos para as funções configuradas nos computadores da sala. |
+| Tobii Pro X2-60 | Rastreador ocular utilizado com o iMac. Consulte o [guia do Tobii](TobiiEyeTracker.md). |
+| Pupil Core | Rastreador ocular vestível com procedimento próprio no repositório. Consulte o [guia do Pupil Core](PupilEyeTracker.md). |
 
----
+Antes da atividade, confirme com o técnico quais câmeras serão utilizadas e os enquadramentos necessários.
 
-## Como funciona
+## Organização das conexões
 
-Todos os dispostivos estão conectados diretamente com a NUC frontal, 
-que através do OBS captura e mostra as telas dos outros computadores, 
-na NUC frontal está ligado a placa que controla o botão que fica do lado de fora da sala. 
+A configuração atual utiliza **uma única NUC frontal, à qual todos os equipamentos da sala estão conectados**. Ela centraliza as conexões utilizadas na captura, no controle e na exibição das atividades.
 
-O botão no momento dessa atualização troca de as cenas do OBS mostrando telas diferentes na TV corredor da sala de usabilidade.
+Solicite apoio técnico antes de alterar conexões ou configurações.
 
-### Stream Deck
+## Captura e acompanhamento da atividade
 
-O Stream Deck é um atalho para automatizar alguns processos dentro da sala, de forma que para o usuário ele consiga apenas usando os botões do stream deck trocar como a sala opera, como por exemplo:
+O **OBS**, na NUC frontal, permite capturar e compor imagens das fontes disponíveis. A composição selecionada é chamada de *cena*: ela define quais imagens aparecem juntas na visualização.
 
-- Ligar o microfone + a camera e gravar esse vídeo em caso de uma possível ou atividade.
-- Gravar a tela do iMac e da Webcam acoplada nele para possíveis atividades usando conceitos de UI/UX
-- Gravar o usuário no sofá ou usando o iMac através da camera lateral (que fica no armário da esquerda da sala.
+Para utilizar o botão externo de alternância das cenas exibidas na TV do corredor, confirme com o técnico se a função está ativa e quais cenas estão configuradas.
 
-A ideia aqui é que conforme apareçam novas necessidades, fique fácil para conseguir programar a sala e fazer ajustes específicos para as necessidades do Insper.
+Antes de começar, recomenda-se fazer um teste curto para conferir enquadramento, áudio, imagem exibida e arquivo gravado. A imagem aparecer no monitor não confirma, por si só, que a gravação foi iniciada.
 
-### Reservas
+## Stream Deck
 
-Para a sala de usabilidade ser usada é necessário entrar no bookings da sala para agendar um horário, a sala hoje não está aberta para uso geral, de forma que, dependendo da justificativa para agendar a sala o agendamento pode ser cancelado por um dos resposáveis pela sala.
+O Stream Deck reúne atalhos locais que podem abrir programas e acionar funções de captura. Conforme o perfil configurado, os atalhos permitem:
+
+- Capturar áudio e vídeo do participante.
+- Gravar a tela do iMac e a imagem de sua webcam.
+- Registrar a interação do participante no sofá ou diante do iMac, utilizando a câmera lateral.
+
+O [guia do Pupil Core](PupilEyeTracker.md) também mostra atalhos de abertura e gravação relacionados ao rastreamento ocular.
+
+As ações dependem do perfil configurado no computador. Antes de usar um botão, confirme com o técnico sua função, o destino dos arquivos e como encerrar a gravação.
+
+## Agendamento e acesso
+
+Reserve o uso da sala pelo [Microsoft Bookings — Insper Sala de Usabilidade](https://bookings.cloud.microsoft/book/InsperSaladeUsabilidade2@insper.onmicrosoft.com/?ismsaljsauthenabled).
+
+Consulte o passo a passo, os serviços e as orientações de acesso em [Orientações gerais — Agendamento da Sala de Usabilidade](../orientacoes-gerais.md#agendamento-da-sala-de-usabilidade). Para dúvidas sobre disponibilidade, adequação da atividade, alteração ou cancelamento, procure a equipe do laboratório.
+
+## Preparação e encerramento
+
+Antes da atividade, combine com o técnico os equipamentos necessários, o procedimento de gravação e os cuidados com os participantes e seus dados. Ao terminar, confira os arquivos, encerre as contas pessoais e siga as instruções da equipe para desligamento e organização do espaço.
+
+As regras de segurança, os contatos e os cuidados com arquivos e gravações estão nas [orientações gerais dos laboratórios](../orientacoes-gerais.md).
