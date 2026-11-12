@@ -3,6 +3,7 @@
 A Sala de Usabilidade permite observar e registrar a interação de participantes com interfaces e outros produtos em um ambiente semelhante ao de uma casa. Seus recursos incluem computadores, câmeras, captação de áudio e equipamentos de rastreamento ocular.
 
 > **Supervisão técnica:** combine o acesso e a preparação da atividade com a equipe do laboratório. Os equipamentos devem ser operados com acompanhamento técnico, conforme os guias de uso da sala.
+>
 
 ![Ambiente da Sala de Usabilidade](../imagens-gerais/sala-de-usabilidade.jpg)
 

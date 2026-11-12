@@ -4,6 +4,9 @@ O Pupil Core é um rastreador ocular vestível que registra o campo de visão do
 
 > **Supervisão técnica obrigatória:** o uso dos equipamentos deve ser acompanhado diretamente por um técnico. A calibração deve ser conduzida pelo técnico responsável.
 
+> **Cuidado com o sensor:** o sensor eye tracker Pupil é bem sensível, o seu manejo deve ser feito com cautela para não danificar conexões eletrônicas e afins.
+
+
 Antes da atividade, consulte as [orientações gerais e o procedimento de agendamento](../orientacoes-gerais.md). Combine com a equipe os cuidados com participantes, gravações e armazenamento dos arquivos.
 
 ![Óculos Pupil Core da Pupil Labs](imagens/pupil/pupilcore.jpg)
